@@ -1,2 +1,2 @@
-# binToMP3Converter
-Bin files converter to MP3
+Works for the files of the following games:
+True Crime: Streets of L.A.
