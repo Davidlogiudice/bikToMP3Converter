@@ -30,7 +30,7 @@
     <li>Create an output folder where the converted MP3 files will be saved. By default, the output folder is named <code>output</code>. If you want to use a different folder name, update the <code>outputFolder</code> variable in the script.</li>
     <li>Run the script using the following command:</li>
   </ol>
-  <pre><code>node script.js</code></pre>
+  <pre><code>node bikToMP3.js</code></pre>
   <p>The script will read the BIK files from the specified folder, convert each file to MP3 format, and save the converted files in the output folder.</p>
   <p>Once the conversion process is complete, the script will log a success message indicating that all files have been converted successfully.</p>
   <h2>Troubleshooting</h2>
