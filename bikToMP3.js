@@ -6,7 +6,8 @@ ffmpegConverter.setFfmpegPath(ffmpegPath);
 
 function convertBikToMp3(bikFilePath, outputFilePath) {
   return new Promise((resolve, reject) => {
-    ffmpegConverter(bikFilePath)
+    ffmpegConverter()
+      .input(bikFilePath)
       .output(outputFilePath)
       .on('end', function() {
         console.log(`Converted ${bikFilePath} to ${outputFilePath}`);
@@ -16,7 +17,7 @@ function convertBikToMp3(bikFilePath, outputFilePath) {
         console.log(`Error during conversion for ${bikFilePath}:`, err.message);
         reject(err);
       })
-      .audioCodec('libmp3lame') 
+      .audioCodec('libmp3lame')
       .run();
   });
 }
@@ -26,13 +27,13 @@ const outputFolder = 'output';
 
 fs.readdir(bikFilesFolder, function(err, files) {
   if (err) {
-    console.log('Error reading the bik files folder:', err.message);
+    console.log('Error reading the BIK files folder:', err.message);
     return;
   }
 
   const conversionPromises = files.map(function(file) {
     const bikFilePath = path.join(bikFilesFolder, file);
-    const outputFileName = path.parse(file).name + '.mp3'
+    const outputFileName = path.parse(file).name + '.mp3';
     const outputFilePath = path.join(outputFolder, outputFileName);
     return convertBikToMp3(bikFilePath, outputFilePath);
   });
