@@ -1,7 +1,6 @@
 {
   "name": "biktomp3converter",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "<!DOCTYPE html>\r <html lang=\"en\">\r <head>\r   <meta charset=\"UTF-8\">\r   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r </head>\r <body>\r   <h1>BIK to MP3 Converter</h1>\r   <p>This script is used to convert BIK audio files to MP3 format using the FFmpeg library. It takes a folder containing BIK files as input, converts each file to MP3, and saves the converted files in the specified output folder.</p>\r   <h2>Prerequisites</h2>\r   <p>Before using this script, make sure you have the following dependencies installed:</p>\r   <ul>\r     <li><a href=\"https://nodejs.org\">Node.js</a> - JavaScript runtime environment.</li>\r     <li><a href=\"https://ffmpeg.org\">FFmpeg</a> - A complete, cross-platform solution to record, convert, and stream audio and video.</li>\r   </ul>\r   <h2>Installation</h2>\r   <ol>\r     <li>Clone the repository or download the script file.</li>\r     <li>Install the required dependencies by running the following command in the terminal:</li>\r   </ol>\r   <pre><code>npm install fluent-ffmpeg</code></pre>\r   <ol start=\"3\">\r     <li>Update the <code>ffmpegPath</code> variable in the script to point to the location of the FFmpeg executable on your system:</li>\r   </ol>\r   <pre><code>const ffmpegPath = 'C:/path_system/ffmpeg';</code></pre>\r   <h2>Usage</h2>\r   <p>To convert BIK files to MP3, perform the following steps:</p>\r   <ol>\r     <li>Place the BIK files that you want to convert in a folder. By default, the script expects the BIK files folder to be named <code>bikfiles</code>. If you want to use a different folder name, update the <code>bikFilesFolder</code> variable in the script.</li>\r     <li>Create an output folder where the converted MP3 files will be saved. By default, the output folder is named <code>output</code>. If you want to use a different folder name, update the <code>outputFolder</code> variable in the script.</li>\r     <li>Run the script using the following command:</li>\r   </ol>\r   <pre><code>node bikToMP3.js</code></pre>\r   <p>The script will read the BIK files from the specified folder, convert each file to MP3 format, and save the converted files in the output folder.</p>\r   <p>Once the conversion process is complete, the script will log a success message indicating that all files have been converted successfully.</p>\r   <h2>Troubleshooting</h2>\r   <p>If you encounter any issues or errors during the conversion process, ensure that:</p>\r   <ul>\r     <li>The FFmpeg executable path (<code>ffmpegPath</code>) is correctly set to the location of the FFmpeg executable on your system.</li>\r     <li>The BIK files folder (<code>bikFilesFolder</code>) contains the BIK files you want to convert.</li>\r     <li>The output folder (<code>outputFolder</code>) exists and is writable.</li>\r   </ul>\r   <p>If you need further assistance, feel free to reach out for support.</p>\r   <h2>License</h2>\r   <p>This script is provided under the <a href=\"https://opensource.org/licenses/MIT\">MIT License</a>.</p>\r </body>\r </html>",
   "main": "bikToMP3.js",
   "dependencies": {
@@ -29,10 +28,6 @@
     "which": "^1.3.1"
   },
   "devDependencies": {},
-=======
-  "description": "",
-  "main": "bikToMP3.js",
->>>>>>> 178a444aa57681fbafc6eeacba5402c81e06ba23
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
